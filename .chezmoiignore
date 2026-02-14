@@ -1,0 +1,94 @@
+# .chezmoiignore - Files and directories to exclude from chezmoi management
+
+# macOS System Files
+.DS_Store
+.CFUserTextEncoding
+.Trash/
+
+# Shell History Files (too personal, change constantly)
+.zsh_history
+.zsh_sessions/
+.lesshst
+.bash_history
+.viminfo
+
+# Zsh Completion Cache (auto-generated)
+.zcompdump*
+.z
+
+# Cache Directories (auto-generated, machine-specific)
+.cache/
+*.zwc
+*.zwc.old
+
+# IDE and Editor Directories (unless heavily customized)
+.vscode/
+.cursor/
+.eclipse/
+.cline/
+.windsurf/
+.codeium/
+.codex/
+.vs-kubernetes/
+.ipython/
+.jupyter/
+
+# AI Assistant Configs (machine-specific, often have local paths)
+.claude/
+.claude.json
+.claude.json.backup
+.copilot/
+
+# Docker (use templates if needed instead)
+.docker/
+
+# Cloud Provider CLIs (contain credentials - manage separately or encrypt)
+# Uncomment if you want to manage these:
+# .aws/
+# .cf/
+
+# Package Managers (auto-generated, large)
+.npm/
+.nvm/
+.m2/
+.krew/
+
+# Kubernetes (contains cluster-specific data)
+.kube/
+.minikube/
+.colima/
+
+# SAP/Work-Specific Tools (likely machine/environment specific)
+.SAP/
+.saptools/
+.sdb/
+.fioritools/
+.ui5/
+.hdb/
+.poreidcache/
+.cds-services.json
+
+# Development Tools Auto-Config
+.langgraph_api/
+.rest-client/
+.rustup/
+.redhat/
+.cisco/
+.p2/
+
+# Node.js version-specific cache
+.v8flags.*
+
+# Temporary/backup files
+*.bak
+*.backup
+*.old
+*.tmp
+*.swp
+*~
+
+# README (optional - include if you want a README in your repo)
+# README.md
+
+# Git directory itself
+.git/

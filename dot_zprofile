@@ -1,0 +1,7 @@
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="/opt/btp-cli:$PATH"
+export PATH="/usr/local/bin:/usr/bin:$PATH"
+export PATH=$PATH:/opt/apache-maven/bin
+export PATH=$PATH:opt/homebrew/opt/sqlite/bin
