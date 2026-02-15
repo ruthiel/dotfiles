@@ -142,3 +142,15 @@ alias cza='chezmoi apply'
 alias czd='chezmoi diff'
 alias czs='chezmoi status'
 alias czu='chezmoi update'
+
+# Git aliases (if not in gitconfig)
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git pull'
+
+# Common shortcuts
+alias ll='ls -lah'
+alias ..='cd ..'
+alias ...='cd ../..'

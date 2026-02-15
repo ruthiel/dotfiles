@@ -1,13 +1,30 @@
 [user]
 	name = I557579
 	email = ruthiel.trevisan@sap.com
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --oneline --graph --decorate --all
+    last = log -1 HEAD
+    unstage = reset HEAD --
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [credential]
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
+		helper = /usr/local/share/gcm-core/git-credential-manager
+
 [credential "https://dev.azure.com"]
 	useHttpPath = true
