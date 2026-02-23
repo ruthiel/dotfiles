@@ -107,6 +107,30 @@ export MANPATH="/usr/local/man:$MANPATH"
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Chezmoi aliases
+alias cz='chezmoi'
+alias cze='chezmoi edit'
+alias cza='chezmoi apply'
+alias czd='chezmoi diff'
+alias czs='chezmoi status'
+alias czu='chezmoi update'
+
+# Git aliases (if not in gitconfig)
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git pull'
+
+# Common shortcuts
+alias ll='ls -lah'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+#Brew aliases
+alias brewup='brew update && brew upgrade && brew cleanup'
+alias brew-save='brew bundle dump --force --file ~/Brewfile && chezmoi re-add ~/Brewfile && chezmoi cd && git add Brewfile && git commit -m "Update Brewfile" && git push'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -135,22 +159,3 @@ export PATH="/Users/I557579/.codeium/windsurf/bin:$PATH"
 # Added Shell Integration for Visual Studio
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
 
-# Chezmoi aliases
-alias cz='chezmoi'
-alias cze='chezmoi edit'
-alias cza='chezmoi apply'
-alias czd='chezmoi diff'
-alias czs='chezmoi status'
-alias czu='chezmoi update'
-
-# Git aliases (if not in gitconfig)
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gp='git push'
-alias gl='git pull'
-
-# Common shortcuts
-alias ll='ls -lah'
-alias ..='cd ..'
-alias ...='cd ../..'
