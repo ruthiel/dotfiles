@@ -11,7 +11,19 @@ fi
 
 # Install essential packages
 echo "Installing essential packages..."
-brew install git age tree fzf ripgrep fd bat eza
+brew bundle install --file "$HOME/Brewfile"
+```
+
+**And make sure your `Brewfile` contains those packages:**
+```
+brew "git"
+brew "age"
+brew "tree"
+brew "fzf"
+brew "ripgrep"
+brew "fd"
+brew "bat"
+brew "eza"
 
 # Install oh-my-zsh if not present
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
